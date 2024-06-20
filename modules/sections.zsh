@@ -23,7 +23,7 @@ alien_prompt_section_exit() {
 
 alien_prompt_section_time() {
   __section=(
-    content " $(alien_time_info) "
+    content " $(emoji-clock) $(alien_time_info) "
     foreground $ALIEN_SECTION_TIME_FG
     background $ALIEN_SECTION_TIME_BG
     separator 1
