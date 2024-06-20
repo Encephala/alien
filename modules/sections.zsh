@@ -125,8 +125,10 @@ alien_prompt_section_ssh() {
   __ssh_info=$(alien_ssh_client)
   [[ -n $__ssh_info ]] || return 1
   __section=(
-    content "${__ssh_info}"
+    content " ${__ssh_info}"
     foreground $ALIEN_SECTION_SSH_FG
+    background $ALIEN_SECTION_SSH_BG
+    separator 1
   )
 }
 
