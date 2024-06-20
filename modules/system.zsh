@@ -29,7 +29,7 @@ alien_time_info(){
 
 alien_ssh_client(){
   if [[ -n "${SSH_CLIENT}" ]]; then
-    echo -n "${SSH_CLIENT}" | awk '{print $1" "}'
+    echo -n "$(hostname) "
   fi
 }
 
